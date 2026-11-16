@@ -1,0 +1,368 @@
+body {
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+}
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.profileimage {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;   /* foto dipotong rapi, tidak gepeng */
+}
+.profile h2 {
+    color:black;
+    
+}
+.profile h4 {
+    color:black;
+}
+/* ===== Dasar ===== */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #3a2e2a;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    background-attachment: fixed;
+}
+
+/* supaya judul section tidak tertutup navbar saat klik menu */
+section {
+    scroll-margin-top: 70px;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    font-family: 'Poppins', sans-serif;
+}
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.navbar .nav-link {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+/* ===== Hero / Profil ===== */
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.profileimage {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 6px solid #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.profile h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: clamp(2rem, 6vw, 4.2rem);
+    color: black;
+    margin-top: 1.5rem;
+}
+
+.profile h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: clamp(1.1rem, 3vw, 1.9rem);
+    color: #5a3a30;
+}
+
+/* ===== Gelombang ===== */
+.wave {
+    display: block;
+    width: 100%;
+    height: 220px;
+    margin-bottom: -1px;
+}
+
+/* ===== Section umum (bagian putih di bawah gelombang) ===== */
+.section {
+    background: #fff;
+    padding: 50px 0;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 3rem);
+    text-align: center;
+    color: #c0392b;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+.section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #fcb69f;
+    border-radius: 2px;
+    margin: 12px auto 0;
+}
+
+/* ===== Biodata ===== */
+.info-box {
+    background: #fff7f1;
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-align: left;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    height: 100%;
+}
+.info-box p {
+    margin-bottom: 0.9rem;
+    font-size: 1.05rem;
+}
+.info-box p:last-child {
+    margin-bottom: 0;
+}
+
+.edu-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* posisi tombol ke tengah secara vertikal */
+    align-items: stretch;
+    gap: 14px;
+    height: 100%;              /* mengikuti tinggi kolom di sebelahnya */
+}
+
+.edu-buttons .btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 12px 18px;
+    border-radius: 50px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.edu-buttons .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(220, 53, 69, 0.4);
+}
+
+/* ===== Modal ===== */
+.modal-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.modal-body {
+    font-size: 1.1rem;
+}
+
+/* ===== Achievement ===== */
+.achievement {
+    background: linear-gradient(to right, #fff7f1, #ffe8dc);
+}
+.achievement .card {
+    border: none;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transition: transform 0.25s;
+}
+.achievement .card:hover {
+    transform: translateY(-8px);
+}
+.achievement .card-body {
+    padding: 2rem 1.5rem;
+}
+.achievement .card-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.achievement .card-subtitle {
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #c0392b;
+}
+.achievement .card-text {
+    font-size: 1rem;
+    color: #555;
+}
+.medal {
+    font-size: 3rem;
+}
+.medal.bronze { color: #cd7f32; }
+.medal.silver { color: #a8a9ad; }
+
+/* ===== Contact ===== */
+.contact {
+    background: #fff;
+}
+.contact-sub {
+    text-align: center;
+    font-size: 1.15rem;
+    margin-top: -1.2rem;
+    margin-bottom: 2.5rem;
+    color: #666;
+}
+
+.contact-card {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 2rem 1rem;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+.contact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.25);
+    color: #fff;
+}
+.contact-card i {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+.contact-card h5 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.contact-card span {
+    font-size: 1rem;
+    word-break: break-all;
+}
+
+.contact-card.instagram {
+    background: linear-gradient(45deg, #f09433, #dc2743, #bc1888);
+}
+.contact-card.email {
+    background: linear-gradient(45deg, #ea4335, #c5221f);
+}
+.contact-card.whatsapp {
+    background: linear-gradient(45deg, #25d366, #128c7e);
+}
+
+/* ===== Footer ===== */
+.site-footer {
+    background: #212529;
+    color: #ddd;
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 0.95rem;
+}
+
+/* ===== Responsif HP ===== */
+@media (max-width: 576px) {
+    .profileimage {
+        width: 220px;
+        height: 220px;
+    }
+    .wave {
+        height: 120px;
+    }
+}
+/* ===== Perbesar font Biodata ===== */
+.biodata .info-box {
+    padding: 5rem;
+}
+.biodata .info-box p {
+    font-size: 1.35rem;     /* sebelumnya 1.05rem */
+    line-height: 1.8;
+}
+.biodata .section-title {
+    font-size: clamp(2.5rem, 6vw, 3.8rem);
+}
+.edu-buttons .btn {
+    font-size: 1.2rem;      /* tombol pendidikan */
+    padding: 14px 20px;
+}
+
+/* ===== Perbesar font Achievement ===== */
+.achievement .section-title {
+    font-size: clamp(3.5rem, 6vw, 3.8rem);
+}
+.achievement .card-title {
+    font-size: 1.9rem;      /* Medali Perak / Perunggu */
+}
+.achievement .card-subtitle {
+    font-size: 1.5rem;      /* Mata pelajaran */
+}
+.achievement .card-text {
+    font-size: 1.5rem;      /* Keterangan lomba */
+}
+.achievement .medal {
+    font-size: 4.0rem;      /* ikon medali */
+}
+/* ===== Rapikan Biodata ===== */
+
+/* container lebih lebar supaya kotak tidak sempit */
+.biodata .container {
+    max-width: 1320px;
+}
+
+/* paksa ketiga kolom sama tinggi (menimpa align-items-start) */
+.biodata .row {
+    align-items: stretch !important;
+}
+
+/* kotak informasi */
+.biodata .info-box {
+    height: 100%;
+    padding: 1.75rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* isi teks rata tengah secara vertikal */
+    border-radius: 18px;
+    background: #fff7f1;
+    border: 1px solid #ffe0cf;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.biodata .info-box p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.biodata .info-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* tombol pendidikan di tengah secara vertikal */
+.biodata .edu-buttons {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+.biodata .edu-buttons .btn {
+    font-size: 1.15rem;
+    padding: 14px 20px;
+    white-space: normal;       /* teks tombol boleh turun baris di layar kecil */
+}
+
+/* tablet & HP: kolom bertumpuk, tinggi menyesuaikan isi */
+@media (max-width: 991px) {
+    .biodata .info-box,
+    .biodata .edu-buttons {
+        height: auto;
+    }
+}
